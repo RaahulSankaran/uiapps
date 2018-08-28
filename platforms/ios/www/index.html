@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+   <head>
+     <title>HomePage</title>
+      <script type="text/javascript" src = "js/angular.js"></script>
+      <script type="text/javascript" src="js/angular-route.js"></script>
+      <script src="js/controller.js" type="text/javascript"></script>
+      <script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js">
+      </script>
+      <script type = "text/javascript">
+         google.charts.load('current', {packages: ['corechart','line']});  
+      </script>
+      <link rel="stylesheet" href="css/index.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBs2N2CYm-EPLNwgoNjPAB0q96WQpsg04&libraries=places&callback"async defer></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+      <script src="js/canvasjs.min.js" type="text/javascript"></script>
+      <script src="js/jquery.canvasjs.min.js" type="text/javascript"></script>
+      <base href="#!"> 
+    </head>
+   
+   <body ng-app = "myapp" ng-controller="indexCtrl">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>
+      <a href="#!"><span class="glyphicon glyphicon-home"> About</span></a>
+      <a href="#!map"><span class="glyphicon glyphicon-map-marker"> Map</span></a>
+      <a href="#!dash"><span class="glyphicon glyphicon-dashboard"> DashBoard</span></a>
+      <a href="#!dash"><span class="glyphicon glyphicon-wrench"> Setting</span></a>
+      <a href="#!">Contact</a>
+    </div>
+    
+    <div id="main">
+      <span style="font-size:30px;cursor:pointer" ng-click="openNav()">&#9776; RaahulTech</span>
+    </div>    
+      <ng-view></ng-view>
+   </body>
+</html>

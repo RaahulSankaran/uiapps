@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js">
+      </script>
+      <script type = "text/javascript">
+         google.charts.load('current', {packages: ['corechart','line']});  
+      </script>
+    <title>Document</title>
+</head>
+<body ng-app="myapp" ng-controller="dashCtrl">
+    <h1>{{message}}</h1>
+    
+    <div id = "container" style = "padding-left:50px; width: 200px; height: 50%" ng-init="lineChart()">
+            </div>
+    <div id = "container1" style = "padding-left:50px; width: 200px; height: 50%" ng-init="pieChart()">
+            </div>
+            
+</body>
+</html>
